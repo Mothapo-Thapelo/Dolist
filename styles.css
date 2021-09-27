@@ -1,0 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+}
+.container{
+    width: 600px;
+    height: 80vh;       
+    margin: 0 auto;
+    border: 1px blue solid;
+    text-align: center  ;
+    
+
+}
+
+.item-list{ 
+    text-align: left;
+    width: 100%;
+}
+
+hr{
+    border-style: none;
+    border-bottom: 5px solid green;
+    width: 95%;
+}
+
+
+input[type=text]{
+    width: 80%;
+} 
+.add-content img:hover{
+    cursor: pointer;
+}
+
+
+input[type=checkbox]:checked + label{
+    color: green;
+    text-decoration: line-through;
+}
