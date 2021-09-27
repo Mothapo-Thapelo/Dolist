@@ -4,42 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do</title>
-
     <link rel="stylesheet" href="styles.css">
-    <script src="app.js" defer></script>
-
+    <title>Dolist - Add New Tasks</title>
 </head>
 <body>
+    
     <header>
-        <h1><a class="brand" href="#">doList</a></h1>
+        <h1><a href="#">Dolist</a></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+
+        </p>
     </header>
 
-    <div class="container">
-       
-
-        <main>  
-            <h2>Add new task</h2>
-
-            <section class="add-content">
-                <input type="text" id="new-item">
-                <img src="https://img.icons8.com/color/48/000000/add--v2.png" onclick="addItem()"/>
-            </section>
+    <main>
+        <section class="new-task-section">
+            <h2>Add New Task</h2>
+            <div class="add-input">
+                <input type="text" id="new-task" value="Prepare supper">
+                <span onclick="addNewTask()">+</span>
+            </div>
             
+            
+        </section>
 
-            <section class="show-content">
-                <h2>Tasks</h2>
-                <div class="item-list">
-                </div>
-                
+        <section class="tasks-section">
+            <h2>Tasks</h2>
 
-            </section>
-        </main>
+            <div class="tasks">
 
+                <input type="checkbox">
+                <label>Clean the house</label> <br>
+
+                <input type="checkbox">
+                <label>Exercise</label> <br>
+
+                <input type="checkbox">
+                <label>Bake muffins for kids</label> <br>
+
+
+            </div>
+        </section>
+        
         <footer>
-            <p><small>&copy; Dolist 2021</small></p>
+            <p><small>&copy; Dolist 2021 <br>by Thapelo</small></p>
         </footer>
-    </div>
+    </main>
+
+
+    
 
 </body>
 </html>
