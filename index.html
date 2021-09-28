@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
     <title>Dolist - Add New Tasks</title>
 </head>
 <body>
+
     
+
     <header>
         <h1><a href="#">Dolist</a></h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -21,26 +24,19 @@
             <h2>Add New Task</h2>
             <div class="add-input">
                 <input type="text" id="new-task" value="Prepare supper">
-                <span onclick="addNewTask()">+</span>
+
+                <button onclick="addItem()">+</button>
             </div>
             
             
         </section>
 
-        <section class="tasks-section">
+        <!-- make it scroll -->
+        <section class="tasks-section">     
             <h2>Tasks</h2>
 
             <div class="tasks">
-
-                <input type="checkbox">
-                <label>Clean the house</label> <br>
-
-                <input type="checkbox">
-                <label>Exercise</label> <br>
-
-                <input type="checkbox">
-                <label>Bake muffins for kids</label> <br>
-
+                <P>Your tasks will appear here.</P>
 
             </div>
         </section>

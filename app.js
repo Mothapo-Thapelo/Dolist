@@ -6,10 +6,10 @@
             //temporarily hold list items
             
             //display box for list
-            let display_box = document.querySelector(".item-list");
+            let display_box = document.querySelector(".tasks");     
 
             //new list item
-            let new_list_item = document.querySelector("#new-item").value;
+            let new_list_item = document.querySelector("#new-task").value;
 
 
             //check if the new item is not empty or already entered

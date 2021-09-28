@@ -8,6 +8,11 @@ body{
     color: #737373;
 }
 
+input[type=checkbox]:checked + label{
+    text-decoration: line-through;
+}
+
+
 header{
     padding-left: 48px;
     padding-top: 48px;
@@ -39,31 +44,37 @@ h2{
     display: flex;
     justify-content: space-between;
     width: 350px;
-    border: 10px solid #5271ff;
+    border: 5px solid #5271ff;
     border-radius:10px; 
     min-height: 65px;
     padding: 5px;
+
 }
 
 .add-input input[type=text]{
     font-size: 1.2rem;
     border-style: none;
     height:65px;
-    width: 75%;
+    width: 85%;
+    padding-left: 16px;
+    color: #737373;
+
 }
 .add-input input[type=text]:focus{
     outline: none;
 }
-.add-input span{
-    text-align: center;
-    font-size: 2rem;
-    display: inline-block;
-    color: green;
-    width: 25%;
-    padding: 5px 0;
-}
-.add-input span:hover{
+.add-input button{
+    width: 15%;
+    border-style: none;
+    font-size: 3rem;
     cursor: pointer;
+    color: rgb(24, 214, 24);
+    background-color: white;
+    padding: 5px;
+}
+
+input[type=checkbox]{
+    font-size: larger;
 }
 
 h1 a{
@@ -87,9 +98,8 @@ h1 a{
 
  .tasks{
     display: inline-block;
-    
      min-width: 420px;
-    min-height: 50vh;
+    min-height: 40vh;
      padding: 32px 32px 0 32px;
      background-color:#5271ff;
      color: white;
