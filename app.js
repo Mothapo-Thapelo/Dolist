@@ -16,22 +16,39 @@
             if(new_list_item !== "" && !(do_list.includes(new_list_item))){
                 do_list.push(new_list_item);
 
-                let id = "task" + do_list.length;
+                // let id = "task" + do_list.length;
 
-                //create a new elements
-                let checkbox = document.createElement("INPUT");
+                // //create a new elements
+                // let checkbox = document.createElement("INPUT");
+                // checkbox.setAttribute("type", "checkbox");
+                // checkbox.id = id;
+
+                // let label = document.createElement("label");
+                // label.innerText = new_list_item;
+                // label.htmlFor = id;
+
+                // let line_break = document.createElement("br");
+
+                // let ruler  = document.createElement("hr");
+
+                // display_box.append(checkbox, label, line_break, ruler);
+
+
+                let outer_label = document.createElement("label");
+                outer_label.setAttribute("class", "container");
+
+                let checkbox = document.createElement("input");
                 checkbox.setAttribute("type", "checkbox");
-                checkbox.id = id;
 
-                let label = document.createElement("label");
-                label.innerText = new_list_item;
-                label.htmlFor = id;
+                let inner_label = document.createElement("label");
+                inner_label.innerText = new_list_item;
 
-                let line_break = document.createElement("br");
 
-                let ruler  = document.createElement("hr");
+                let custom_checkbox = document.createElement("span");
+                custom_checkbox.setAttribute("class", "checkmark");
 
-                display_box.append(checkbox, label, line_break, ruler);
+                outer_label.append(checkbox, inner_label, custom_checkbox);
+                display_box.append(outer_label);
             
                 //clear the input
                 document.querySelector("#new-item").value = "";
