@@ -16,12 +16,16 @@
             if(new_list_item !== "" && !(do_list.includes(new_list_item))){
                 do_list.push(new_list_item);
 
+                let id = "task" + do_list.length;
+
                 //create a new elements
                 let checkbox = document.createElement("INPUT");
                 checkbox.setAttribute("type", "checkbox");
+                checkbox.id = id;
 
                 let label = document.createElement("label");
                 label.innerText = new_list_item;
+                label.htmlFor = id;
 
                 let line_break = document.createElement("br");
 
