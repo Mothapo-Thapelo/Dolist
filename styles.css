@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&display=swap');
 @import url("custom_checkbox.css");
 
+:root{
+    --primary-color: #5271ff;
+    --paragraph-color: #737373;
+    --reset: 0;
+}
+
 body{
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #737373;
+    margin: var(--reset);
+    padding: var(--reset);
+    color:var(--paragraph-color);
 }
 
 
@@ -16,13 +22,13 @@ header{
 }
 
 header p{
-    padding: 0;
-    margin: 0;
+    padding: var(--reset);
+    margin:var(--reset);
 }
 
 h1{
-    margin: 0;
-    padding: 0;
+    margin: var(--reset);
+    padding: var(--reset);
     font-weight: 800;
     font-size: 60px;
     
@@ -37,11 +43,11 @@ h2{
 }
 
 .add-input{
-    margin: 0 auto;
+    margin: var(--reset) auto;
     display: flex;
     justify-content: space-between;
     width: 350px;
-    border: 5px solid #5271ff;
+    border: 5px solid var(--primary-color);
     border-radius:10px; 
     min-height: 65px;
     padding: 5px;
@@ -54,7 +60,7 @@ h2{
     height:65px;
     width: 85%;
     padding-left: 16px;
-    color: #737373;
+    color: var(--paragraph-color);
 
 }
 .add-input input[type=text]:focus{
@@ -74,7 +80,7 @@ h2{
 
 h1 a{
     text-decoration: none;
-    color: #5271ff;
+    color: var(--primary-color);
 }
  header p{
      text-align: center;
@@ -96,7 +102,7 @@ h1 a{
      min-width: 420px;
     min-height: 40vh;
      padding: 32px 32px 0 32px;
-     background-color:#5271ff;
+     background-color: var(--primary-color);
      color: white;
      border-top-right-radius: 15%;
  }

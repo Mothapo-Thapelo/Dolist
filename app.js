@@ -16,7 +16,7 @@
             if(new_list_item !== "" && !(do_list.includes(new_list_item))){
                 do_list.push(new_list_item);
 
-                // let id = "task" + do_list.length;
+                let id = "task" + do_list.length;
 
                 // //create a new elements
                 // let checkbox = document.createElement("INPUT");
@@ -39,9 +39,11 @@
 
                 let checkbox = document.createElement("input");
                 checkbox.setAttribute("type", "checkbox");
+                checkbox.id = id;
 
                 let inner_label = document.createElement("label");
                 inner_label.innerText = new_list_item;
+                inner_label.htmlFor = id;
 
 
                 let custom_checkbox = document.createElement("span");
